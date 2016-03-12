@@ -1,0 +1,82 @@
+﻿<Window x:Class="Bubble.Splash"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+        WindowState="Maximized"
+        Width="1200"
+        Height="700" 
+        Title="Bubble Brainer">
+
+    <Window.Resources>
+        <Style x:Key="text" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="FontFamily" Value="Arial"/>
+            <Setter Property="Foreground" Value="Green"/>
+
+        </Style>
+
+
+        <Style x:Key="buttons" TargetType="Button">
+            <Setter Property="Width" Value="200"/>
+            <Setter Property="Height" Value="70"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Padding" Value="5"/>
+        </Style>
+
+        <Style x:Key="button_text" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="FontFamily" Value="Arial"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+<<<<<<< HEAD
+            <Setter Property="Foreground" Value="Black"/>
+=======
+            <Setter Property="Foreground" Value="White"/>
+>>>>>>> 13d3f5e214eb2bcc5f1e40555ebe82011bdb04a5
+        </Style>
+    </Window.Resources>
+    
+    
+    <Grid>
+        
+
+        <StackPanel Background="White"  Grid.Row="0" Grid.Column="0" Name="help_screen"  VerticalAlignment="Center"  Grid.ColumnSpan="4" Orientation="Vertical" Margin="10">
+            
+<<<<<<< HEAD
+            <TextBlock Name="instructions"  Foreground="Gray" HorizontalAlignment="Center" Margin="0, 0, 0, 0" FontSize="40">Think you 'r Smart, Huh?</TextBlock>
+=======
+            <TextBlock Name="instructions"  Foreground="Green" HorizontalAlignment="Center" Margin="0, 0, 0, 0" FontSize="40">Think you are smart, huh?</TextBlock>
+>>>>>>> 13d3f5e214eb2bcc5f1e40555ebe82011bdb04a5
+            <TextBlock Foreground="Black"  HorizontalAlignment="Center" Margin="100, 20, 50, 20" FontSize="20" VerticalAlignment="Center" TextWrapping="Wrap">This simple game will reveal just how strong a memory you have. The rule is simple: Click the last bubble to appear on the screen! This means you will have to memorize the positions of all the bubbles currently on the screen so you can tell which one was added last after the screen flickers. Goodluck! <LineBreak/><LineBreak/> Press Q to Quit,  and Space to Pause</TextBlock>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0" Width="797">
+                <Button Name="easy" HorizontalAlignment="Left" BorderBrush="Transparent" Background="Transparent" Click="gameStartEasy" Style="{StaticResource buttons}" >
+                    <Grid>
+                        <Image Source="Resources/btn.png"/>
+                        <TextBlock Style="{StaticResource button_text}">Play Easy</TextBlock>
+                    </Grid>
+                </Button>
+
+                <Button Name="medium" HorizontalAlignment="Center" BorderBrush="Transparent" Background="Transparent" Click="gameStartMedium" Style="{StaticResource buttons}" >
+                    <Grid>
+                        <Image Source="Resources/btn.png"/>
+                        <TextBlock Style="{StaticResource button_text}">Play Medium</TextBlock>
+                    </Grid>
+                </Button>
+
+
+                <Button Name="hard" HorizontalAlignment="Right" BorderBrush="Transparent" Background="Transparent" Click="gameStartHard" Style="{StaticResource buttons}" >
+                    <Grid>
+                        <Image Source="Resources/btn.png"/>
+                        <TextBlock Style="{StaticResource button_text}">Play Hard</TextBlock>
+                    </Grid>
+                </Button>
+ 
+                <Button Name="quit" HorizontalAlignment="Right" BorderBrush="Transparent" Background="Transparent" Click="close" Style="{StaticResource buttons}" >
+                    <Grid>
+                        <Image Source="Resources/btn.png"/>
+                        <TextBlock Style="{StaticResource button_text}">Exit</TextBlock>
+                    </Grid>
+                </Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
